@@ -16,7 +16,7 @@ This project displays a list of the "Most-Watched Films" in a horizontal scrolla
 
 #How to Run the Code
 
-> Download or Clone the Repository: 
+> Download or Clone the Repository: https://github.com/Gouda5562/IndeeTV-Internship-Assignment
 Ensure all files "(index.html, style.css, script.js, and the media directory)" are in the same directory.
 
 > Open the HTML File:
@@ -27,4 +27,3 @@ View and Interact:
 The web page should display the list of movies in a horizontal scrollable format.
 Click the "previous" and "next" buttons to scroll through the list of movies.
 
-output of the video :
