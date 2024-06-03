@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background: #0c111b;
+    position: relative;
+    font-family: roboto, sans-serif;
+}
+
+.title {
+    color: #fff;
+    opacity: 0.9;
+    padding-left: 3%;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+.movies-list {
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust the height to cover the full Chrome window height */
+    position: relative;
+    margin: 10px 0 20px;
+}
+
+.card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.card {
+    position: relative;
+    min-width: 300px; /* Adjust the width as needed */
+    width: 300px; /* Adjust the width as needed */
+    height: calc(100vh - 200px); /* Adjust the height to cover the full Chrome window height */
+    border-radius: 15px; /* Curved edges */
+    overflow: hidden;
+    margin-left: 10px;
+    transition: .5s;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-container {
+    flex: 2; /* Adjust the flex ratio to allocate more space for the image */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Ensure the image fits within the container without zooming */
+    display: block;
+}
+
+.card-body {
+    flex: 0.3; /* Adjust the flex ratio to allocate more space for the text */
+    padding: 20px; /* Increase padding for better spacing */
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: flex-start; /* Align text to the left */
+}
+
+.name {
+    color: #fff;
+    font-size: 24px; /* Increase font size */
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add some space below the name */
+    font-weight: bold;
+}
+
+.des {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 16px; /* Increase font size */
+    text-align: left; /* Align text to the left */
+}
+
+
+.pre-btn,
+.nxt-btn {
+    position: absolute;
+    top: 50%; /* Center the buttons vertically */
+    transform: translateY(-50%); /* Center the buttons vertically */
+    width: 50px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5); /* Make the background semi-transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5; /* Make the buttons slightly transparent */
+    transition: opacity 0.3s;
+}
+
+.pre-btn:hover,
+.nxt-btn:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+.pre-btn img,
+.nxt-btn img {
+    width: 30px; /* Increase the size of the icons */
+    height: 30px; /* Increase the size of the icons */
+}
+
+.pre-btn {
+    left: 0;
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+/* New Label Styles */
+.new-label {
+    display: inline-block;
+    background-color: #FF9900;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Adjust this to control the spacing between the label and the movie name */
+}
