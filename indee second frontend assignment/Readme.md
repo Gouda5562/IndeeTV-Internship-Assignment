@@ -27,4 +27,4 @@ View and Interact:
 The web page should display the list of movies in a horizontal scrollable format.
 Click the "previous" and "next" buttons to scroll through the list of movies.
 
-Netlify deployment link: indeetv-assignment-03.netlify.app (By clicking this link it will lode the website)
+Netlify deployment link: [indeetv-assignment-03.netlify.app](https://indeetv-assignment-03.netlify.app/) (By clicking this link it will lode the website)
